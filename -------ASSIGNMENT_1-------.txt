@@ -1,0 +1,246 @@
+-------ASSIGNMENT 1-------
+
+
+Question 1:
+Input two variables A,B
+Sum=A+B
+Print sum
+ // Question 1
+        public static int sum(int a, int b)
+        {
+          int s;
+        s = a + b ;
+        return s ;
+        
+        }
+         public static void main(string[] args)
+        {
+            Console.WriteLine("enter a number");
+            int n1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("enter a number");
+            int n2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine(sum(n1, n2));
+
+        }
+
+
+Question 2:
+for(i=0,i<=100)
+i=i+1
+if i MOD 2=0
+print i
+         static void main()
+         {
+         for(int i=0; i<=100; i++)
+     {
+             int s= i%2;
+         if (s==0)
+         Console.WriteLine(i);
+     }
+         }
+
+
+
+Question 3:
+leap year(y)
+y MOD 4=0
+print y is leap year
+// Question 3
+         public static int Leap_Year(int y)
+         {
+             int l;
+             l = y % 4;
+             if (l == 0)
+             {
+                 Console.WriteLine("This is a leap year");
+             }
+             return l;
+         }
+         public static void main(string[] args)
+         {
+             Console.WriteLine("enter a year");
+             int n = Convert.ToInt32(Console.ReadLine());
+             Console.WriteLine(Leap_Year(n));
+         }
+
+
+Question 4:
+input KPH
+convert= KPH*0.621371
+print convert
+         // Question 4
+         public static double converted(double a)
+         {
+             double r;
+             r = a * 0.621371;
+             return r;
+         }
+         public static void main(string[] args)
+         {
+             Console.WriteLine("enter kph");
+             int n = Convert.ToInt32(Console.ReadLine());
+             Console.WriteLine(converted(n));
+         }
+
+
+Question 5:
+input A
+If A MOD 7=0 or '7' in A
+print A is buzz number
+// Question 5
+         public static int BUZZ(int s)
+         {
+             int t,w;
+             t = s % 7;
+             w = s % 10;
+             if(t==0||w==7)
+             {
+                 Console.WriteLine(s);
+             }
+             return s;
+             
+         }
+
+
+Question 6:
+input A
+i
+while i<=10
+Do M=i*A
+i=i+1
+print M
+end
+public static int table(int A)
+         {
+             int m;
+
+             for (int i = 1; i <= 10; i = i + 1)
+             {
+                 m = i * A;
+                 
+             }
+             return 0;
+         }
+
+
+Question 7:
+input n
+factorial=1
+for i<=n
+factorial= i*factorial
+end
+// Question 7
+         public static int Fact(int d)
+         {
+             int factorial = 1;
+             for(int i=1;i<=d;i++)
+             {
+                 factorial = i * factorial;
+             }
+             return factorial;
+         }
+
+
+Question 8:
+input n
+for i=2<n
+n MOD i=0
+end
+if condition satisfies then number is not prime number
+// Question 8
+        public static int PrimeNumber(int f)
+        {
+            int s;
+            for(int i=2; i<f;i++)
+            {
+                s = f % i;
+                Console.WriteLine(s);
+                if (s != 0)
+                {
+                    Console.WriteLine("The number is a prime number");
+                }
+            }
+
+            return 0;
+        }
+        public static void main(string[] args)
+        {
+            Console.WriteLine("enter number");
+            int n = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(PrimeNumber(n));
+        }
+
+
+
+
+Question 9:
+input a.b.c
+if a=b=c
+print equilateral
+else if a!=b!=c
+print scalene
+else if a=b!=c or a=c!=b or b=c!=a
+print isosceles
+ public static int triangle(int a, int b, int c)
+        {
+            if(a==b&&b==c)
+            {
+                Console.WriteLine("Equilateral Triangle");
+            }
+            else if(a!=b&&b!=c&&a!=c)
+            {
+                Console.WriteLine("Scalene Triangle");
+            }
+            else if(a==b||b==c||a==c)
+            {
+                Console.WriteLine("Isosceles Triangle");
+            }
+            return 0;
+        }
+        public static void main(string[] args)
+        {
+            Console.WriteLine("enter first side");
+            int n = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter second side");
+            int m = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("enter third side");
+            int o = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(triangle(n,m,o));
+        }
+
+Question 10:
+print *
+print **
+print ***
+print ****
+print *****
+
+for i<=5 
+i=i+1
+print *
+end
+ public static int stars(int n)
+        {
+            for(int i=1;i<=n;i++)
+            {
+                Console.WriteLine("*");
+            }
+            return 0;
+        }
+        public static void main(string[] args)
+        {
+            Console.WriteLine("enter number");
+            int n = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(stars(n));
+        }
+
+
+Bonus Question:
+if we use arrays
+in case of 3 digit number if first and last entry remains the same after replacing with each other then number will be palindrome 
+
+
+
+
