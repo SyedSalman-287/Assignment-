@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Book One",
+        "author": "Author One",
+        "description": "Description for book one.",
+        "image": "book1.jpg"
+    },
+    {
+        "title": "Book Two",
+        "author": "Author Two",
+        "description": "Description for book two.",
+        "image": "book2.jpg"
+    },
+    {
+        "title": "Book Three",
+        "author": "Author Three",
+        "description": "Description for book three.",
+        "image": "book3.jpg"
+    }
+]
